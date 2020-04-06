@@ -32,8 +32,7 @@ public class PracticalTest01MainActivity extends AppCompatActivity {
         navigateButton = findViewById(R.id.navigate_button);
         leftText = findViewById(R.id.left_editText);
         rightText = findViewById(R.id.right_editText);
-        service = new Intent();
-        service.setComponent(new ComponentName("ro.pub.cs.systems.eim.practicaltest01", "PracticalTest01Service"));
+        service = new Intent(this, PracticalTest01Service.class);
 
         leftButton.setOnClickListener(new View.OnClickListener() {
             @Override
